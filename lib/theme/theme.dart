@@ -26,38 +26,45 @@ abstract class _DarkColors {
 
 /// Reference to the application theme.
 abstract class AppTheme {
-  static const accentColor = AppColors.accent;
+  static const accentColor = AppColors.secondary;
   static final visualDensity = VisualDensity.adaptivePlatformDensity;
 
   /// Light theme and its settings.
   static ThemeData light() => ThemeData(
-        brightness: Brightness.light,
-        accentColor: accentColor,
-        visualDensity: visualDensity,
-        textTheme:
-            GoogleFonts.mulishTextTheme().apply(bodyColor: AppColors.textDark),
-        backgroundColor: _LightColors.background,
-        scaffoldBackgroundColor: _LightColors.background,
-        cardColor: _LightColors.card,
-        primaryTextTheme: const TextTheme(
-          headline6: TextStyle(color: AppColors.textDark),
-        ),
-        iconTheme: const IconThemeData(color: AppColors.iconDark),
-      );
+      brightness: Brightness.light,
+      accentColor: accentColor,
+      visualDensity: visualDensity,
+      textTheme:
+          GoogleFonts.mulishTextTheme().apply(bodyColor: AppColors.textDark),
+      backgroundColor: _LightColors.background,
+      scaffoldBackgroundColor: _LightColors.background,
+      cardColor: _LightColors.card,
+      primaryTextTheme: const TextTheme(
+        headline6: TextStyle(color: AppColors.textDark),
+      ),
+      iconTheme: const IconThemeData(color: AppColors.secondary),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(backgroundColor: AppColors.cardDark)),
+      textButtonTheme: TextButtonThemeData(
+          style: TextButton.styleFrom(backgroundColor: AppColors.cardDark)));
 
   /// Dark theme and its settings.
   static ThemeData dark() => ThemeData(
-        brightness: Brightness.dark,
-        accentColor: accentColor,
-        visualDensity: visualDensity,
-        textTheme:
-            GoogleFonts.interTextTheme().apply(bodyColor: AppColors.textLigth),
-        backgroundColor: _DarkColors.background,
-        scaffoldBackgroundColor: _DarkColors.background,
-        cardColor: _DarkColors.card,
-        primaryTextTheme: const TextTheme(
-          headline6: TextStyle(color: AppColors.textLigth),
-        ),
-        iconTheme: const IconThemeData(color: AppColors.iconLight),
-      );
+      brightness: Brightness.dark,
+      accentColor: accentColor,
+      visualDensity: visualDensity,
+      textTheme:
+          GoogleFonts.interTextTheme().apply(bodyColor: AppColors.textLigth),
+      backgroundColor: _DarkColors.background,
+      scaffoldBackgroundColor: _DarkColors.background,
+      cardColor: _DarkColors.card,
+      primaryTextTheme: const TextTheme(
+        headline6: TextStyle(color: AppColors.textLigth),
+      ),
+      iconTheme: const IconThemeData(color: AppColors.secondary),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+          style:
+              ElevatedButton.styleFrom(backgroundColor: AppColors.cardLight)),
+      textButtonTheme: TextButtonThemeData(
+          style: TextButton.styleFrom(backgroundColor: AppColors.cardLight)));
 }

@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
           routes: {'login': (context) => MyLogin()},
           title: 'Flutter Demo',
           debugShowCheckedModeBanner: false,
-          theme: AppTheme.light(),
+          theme: AppTheme.dark(),
           // darkTheme: AppTheme.dark(),
           // themeMode: ThemeMode.dark,
           home: auth.isAuth ? NavScreen() : MyLogin(),
