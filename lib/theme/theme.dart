@@ -31,22 +31,23 @@ abstract class AppTheme {
 
   /// Light theme and its settings.
   static ThemeData light() => ThemeData(
-      brightness: Brightness.light,
-      accentColor: accentColor,
-      visualDensity: visualDensity,
-      textTheme:
-          GoogleFonts.mulishTextTheme().apply(bodyColor: AppColors.textDark),
-      backgroundColor: _LightColors.background,
-      scaffoldBackgroundColor: _LightColors.background,
-      cardColor: _LightColors.card,
-      primaryTextTheme: const TextTheme(
-        headline6: TextStyle(color: AppColors.textDark),
-      ),
-      iconTheme: const IconThemeData(color: AppColors.secondary),
-      elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ElevatedButton.styleFrom(backgroundColor: AppColors.cardDark)),
-      textButtonTheme: TextButtonThemeData(
-          style: TextButton.styleFrom(backgroundColor: AppColors.cardDark)));
+        brightness: Brightness.light,
+        accentColor: accentColor,
+        visualDensity: visualDensity,
+        textTheme:
+            GoogleFonts.mulishTextTheme().apply(bodyColor: AppColors.textDark),
+        backgroundColor: _LightColors.background,
+        scaffoldBackgroundColor: _LightColors.background,
+        cardColor: _LightColors.card,
+        primaryTextTheme: const TextTheme(
+          headline6: TextStyle(color: AppColors.textDark),
+        ),
+        iconTheme: const IconThemeData(color: AppColors.secondary),
+      );
+  // elevatedButtonTheme: ElevatedButtonThemeData(
+  //     style: ElevatedButton.styleFrom(backgroundColor: AppColors.cardDark)),
+  // textButtonTheme: TextButtonThemeData(
+  //     style: TextButton.styleFrom(backgroundColor: AppColors.cardDark)));
 
   /// Dark theme and its settings.
   static ThemeData dark() => ThemeData(
@@ -61,10 +62,10 @@ abstract class AppTheme {
       primaryTextTheme: const TextTheme(
         headline6: TextStyle(color: AppColors.textLigth),
       ),
-      iconTheme: const IconThemeData(color: AppColors.secondary),
-      elevatedButtonTheme: ElevatedButtonThemeData(
-          style:
-              ElevatedButton.styleFrom(backgroundColor: AppColors.cardLight)),
-      textButtonTheme: TextButtonThemeData(
-          style: TextButton.styleFrom(backgroundColor: AppColors.cardLight)));
+      iconTheme: const IconThemeData(color: AppColors.secondary));
+  // elevatedButtonTheme: ElevatedButtonThemeData(
+  //     style:
+  //         ElevatedButton.styleFrom(backgroundColor: AppColors.cardLight)),
+  // textButtonTheme: TextButtonThemeData(
+  //     style: TextButton.styleFrom(backgroundColor: AppColors.cardLight)));
 }

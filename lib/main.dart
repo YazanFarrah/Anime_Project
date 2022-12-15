@@ -25,14 +25,17 @@ class MyApp extends StatelessWidget {
       ],
       child: Consumer<Auth>(
         builder: (ctx, auth, _) => MaterialApp(
-          routes: {'login': (context) => MyLogin()},
-          title: 'Flutter Demo',
-          debugShowCheckedModeBanner: false,
-          theme: AppTheme.dark(),
-          // darkTheme: AppTheme.dark(),
-          // themeMode: ThemeMode.dark,
-          home: auth.isAuth ? NavScreen() : MyLogin(),
-        ),
+            routes: {'login': (context) => MyLogin()},
+            title: 'Flutter Demo',
+            debugShowCheckedModeBanner: false,
+            theme: AppTheme.dark(),
+            // darkTheme: AppTheme.dark(),
+            // themeMode: ThemeMode.dark,
+            home:
+                //  auth.isAuth ?
+                NavScreen()
+            //  : MyLogin(),
+            ),
       ),
     );
   }

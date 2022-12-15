@@ -49,7 +49,8 @@ class _NavScreenState extends State<NavScreen> {
           animatedIcon: AnimatedIcons.add_event,
           children: [
             SpeedDialChild(
-                onTap: () => showToast('Add post!'),
+                onTap: () => Navigator.pushReplacement(
+                    context, MaterialPageRoute(builder: (_) => AddPost())),
                 child: const Icon(Icons.post_add),
                 label: 'Add Post'),
             SpeedDialChild(

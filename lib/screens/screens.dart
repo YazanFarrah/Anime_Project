@@ -7,3 +7,4 @@ export 'stories.dart';
 export 'inbox_screen.dart';
 export 'pushwithname.dart';
 export 'profile_screen.dart';
+export 'add-post-screen.dart';

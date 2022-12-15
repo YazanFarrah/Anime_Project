@@ -43,8 +43,8 @@ class ChatScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(8.0),
+      body: const Padding(
+        padding: EdgeInsets.all(8.0),
         child: MessagesPage(),
       ),
     );

@@ -1,8 +1,4 @@
 import 'dart:convert';
-import 'dart:developer';
-
-import '../util/api_constants.dart';
-import 'package:http/http.dart' as http;
 
 UserModel userModelFromJson(String str) => UserModel.fromJson(json.decode(str));
 
